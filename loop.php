@@ -38,7 +38,44 @@
     </div>
   </div>
 </nav>
-    <h1>Hello, world!</h1>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+      
+      <?php
+      //While Loop
+      $x = 3;
+      while ($x <= 7) {
+        echo "hi there.<br>";
+        $x++;
+      };
+      ?>
+
+      <?php
+      //Do while loop
+      $x = 3;
+      do {
+        echo "hi, Greetings!<br>";
+        $x++;
+      }
+      while ($x <= 4);
+      ?>
+
+      <?php
+      //For Loop
+      for ($x = 3; $x <= 10; $x++) {
+        echo "Hola!!<br>";
+      };
+      ?>
+
+      <?php
+      //Foreach loop
+      $array = array("Liam","Jane Claire","Micah","Mady");
+
+      foreach ($array as $loopdata) {
+        echo "My name is ".$loopdata. ".<br>";
+      }
+
+
+      ?>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
   </body>
 </html>
