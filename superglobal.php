@@ -1,5 +1,4 @@
 
-
 <!doctype html>
 <html lang="en">
   <head>
@@ -18,24 +17,17 @@ include ('includes/header.php');
 
 <?php
 
-  //String
-  $name = "Coding is alright...";
+/*
+$_COOKIE
+$_SESSION
+*/
 
-  //Integer
-  $name = 20;
+setcookie("name", "Liam", time() - 172,800);
 
-  //Float
-  $name =20.2002;
-
-  //Boolean
-  // true = 1
-  // false = 0
-  //Array
-
-  $names = array("Liam","Tubbs","Jackson");
-  echo $names['2'];
+$_SESSION['name'] = "12";
 
 ?>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
 </html>

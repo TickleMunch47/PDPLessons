@@ -1,3 +1,7 @@
+<?php
+  session_start();
+?>
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -26,8 +30,9 @@
             <li><a class="dropdown-item" href="calender.php">Calender</a></li>
             <li><a class="dropdown-item" href="conditionals.php">Conditionals</a></li>
             <li><a class="dropdown-item" href="datatypes.php">Data Types</a></li>
-            <li><a class="dropdown-item" href="functions.php">Functions</a></li>
+            <li><a class="dropdown-item" href="function.php">Functions</a></li>
             <li><a class="dropdown-item" href="loop.php">Loops</a></li>
+            <li><a class="dropdown-item" href="superglobal.php">Super Gloxal</a></li>
           </ul>
         </li>
       </ul>
@@ -38,3 +43,18 @@
     </div>
   </div>
 </nav>
+
+<?php
+
+$_SESSION['username'] = "TickleMunch47 ";
+echo $_SESSION['username'];
+
+if (!isset($_SESSION['username'])) {
+  echo "You are not logged in!";
+
+} else {
+  echo "You are logged in!";
+}
+
+?>
+
